@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+  font-family: 'Cocogoose Pro';
+  src: URL('src/landingPage/fonts/Cocogoose-Pro-Bold-trial.ttf')
+    format('truetype');
+  font-weight: 700; /* Bold weight */
+  font-style: normal; /* Normal style */
+}
+
+@font-face {
+  font-family: 'Cocogoose Pro';
+  src: URL('src/landingPage/fonts/Cocogoose-Pro-Regular-trial.ttf')
+    format('truetype');
+  font-weight: 400; /* Bold weight */
+  font-style: normal; /* Normal style */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Optional: Ensures these elements span the full height */
+}
+
+.header {
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(102, 102, 102, 0.2)
+  );
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.header .content {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 30vw;
+}
+.nav-bar ul a {
+  font-size: 24px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#banner {
+  border: 1px solid transparent;
+  background-image: url('src/landingPage/images/banner-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+#banner h1 {
+  font-family: 'Cocogoose Pro', sans-serif;
+  font-size: 128px;
+  text-align: center;
+  color: white;
+  margin: 80px auto;
+}
+#banner h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  width: 60vw;
+  margin: auto;
+  color: #f9f9f9;
+  font-weight: 500;
+}
+
+.search-bar {
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 999px;
+  background-color: #f9f9f9;
+  height: 50px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar input {
+  all: unset;
+  height: 50px;
+  width: 600px;
+  text-align: left;
+}
+
+.menu-button,
+.search-button {
+  all: unset;
+  margin: 0px 20px;
+}
+
+.menu-button i,
+.search-button i {
+  font-size: 25px;
+}
+
+#features {
+  background-image: url('src/landingPage/images/features-bg.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#features h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #333333;
+  font-size: 40px;
+  padding: 8vh;
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.details h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  text-align: center;
+  padding: 30px;
+  font-size: 24px;
+}
+
+.details p {
+  font-family: 'Source Sans 3', sans-serif;
+  text-align: left;
+  margin: auto 20px;
+  font-size: 18px;
+}
+
+.attractions,
+.restaurants,
+.events {
+  background-color: white;
+  height: 60vh;
+  width: 20vw;
+  margin: 3vw;
+  border-radius: 20px;
+}
+
+.attractions img,
+.restaurants img,
+.events img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#about {
+  background-image: url('src/landingPage/images/about-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  color: white;
+  font-size: 40px;
+  padding: 8vh;
+  text-align: center;
+}
+
+#about img {
+  width: 50vw;
+  display: inline-block;
+}
+
+#about h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  color: white;
+  font-size: 28px;
+  padding: 20vh;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25vh;
+}
+
+#contact .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 30vw;
+}
+
+#contact p {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.contact-logo {
+  height: 10vh;
+}
+
+#contact ul {
+  list-style-type: none;
+}
+
+#contact ul a {
+  font-size: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+  text-decoration: none;
+  color: #333333;
+}
